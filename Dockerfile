@@ -37,5 +37,6 @@ RUN rm -rf wordpress/wp-config-sample.php
 COPY ./srcs/wp-config.php wordpress
 
 COPY ./srcs/init.sh /
+COPY ./srcs/autoindex.sh /
 
 CMD bash /init.sh
